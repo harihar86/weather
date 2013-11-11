@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+        >
+    <EditText
+            android:id="@+id/locationInput"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enterLocation"
+            android:inputType="text"/>
+    <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:layout_below="@+id/locationInput"
+            android:onClick="search"/>
+
+    <LinearLayout android:id="@+id/weatherDisplay"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <ImageView android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:id="@+id/weatherIcon"/>
+
+        <TextView android:id="@+id/currentTemp"
+                  android:layout_width="5dp"
+                  android:layout_height="5dp"/>
+
+        <TextView android:id="@+id/precipitation"
+                  android:layout_width="5dp"
+                  android:layout_height="5dp"/>
+
+        <TextView android:id="@+id/description"
+                  android:layout_width="5dp"
+                  android:layout_height="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
