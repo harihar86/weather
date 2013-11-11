@@ -22,23 +22,45 @@
     <LinearLayout android:id="@+id/weatherDisplay"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:orientation="horizontal">
+                  android:orientation="horizontal"
+                  android:layout_below="@id/button_search"
+                  android:layout_marginTop="50dp"
+                  android:baselineAligned="false">
 
-        <ImageView android:layout_height="20dp"
-                   android:layout_width="20dp"
-                   android:id="@+id/weatherIcon"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="1">
 
-        <TextView android:id="@+id/currentTemp"
-                  android:layout_width="5dp"
-                  android:layout_height="5dp"/>
+            <TextView android:id="@+id/description"
+                      android:layout_width="100dp"
+                      android:layout_height="50dp"
+                      android:textSize="15sp"
+                      android:layout_gravity="center"/>
 
-        <TextView android:id="@+id/precipitation"
-                  android:layout_width="5dp"
-                  android:layout_height="5dp"/>
+            <ImageView android:layout_height="100dp"
+                       android:layout_width="100dp"
+                       android:id="@+id/weatherIcon"
+                       android:layout_gravity="center"/>
+        </LinearLayout>
 
-        <TextView android:id="@+id/description"
-                  android:layout_width="5dp"
-                  android:layout_height="5dp"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="1">
+
+            <TextView android:id="@+id/currentTemp"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:gravity="top"
+                      android:layout_gravity="center"
+                      android:textSize="25sp"/>
+
+            <TextView android:id="@+id/precipitation"
+                      android:layout_width="wrap_content"
+                      android:layout_height="50dp"
+                      android:layout_gravity="center"/>
+        </LinearLayout>
 
     </LinearLayout>
 
