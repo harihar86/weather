@@ -18,5 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activity.ForecastActivity"
+                  android:parentActivityName=".activity.WeatherActivity" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.orbitz.weather.activity.MainActivity" />
+        </activity>
     </application>
 </manifest>

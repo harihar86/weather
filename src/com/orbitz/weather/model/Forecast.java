@@ -2,12 +2,22 @@ package com.orbitz.weather.model;
 
 import android.graphics.Bitmap;
 
-public class CurrentWeather {
+public class Forecast {
 
+    private String date;
     private String currentTemp;
     private String description;
     private String precipitation;
-    private Bitmap bitmap;
+
+    public String getIconUrl() {
+        return iconUrl;
+    }
+
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
+    }
+
+    private String iconUrl;
 
     public String getCurrentTemp() {
         return currentTemp;
@@ -33,11 +43,12 @@ public class CurrentWeather {
         this.precipitation = precipitation;
     }
 
-    public Bitmap getBitmap() {
-        return bitmap;
+    public String getDate() {
+        return date;
     }
 
-    public void setBitmap(Bitmap bitmap) {
-        this.bitmap = bitmap;
+    public void setDate(String date) {
+        this.date = date;
     }
 }
+
