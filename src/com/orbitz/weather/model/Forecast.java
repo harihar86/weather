@@ -1,9 +1,8 @@
 package com.orbitz.weather.model;
 
-import android.graphics.Bitmap;
-
 public class Forecast {
 
+    private String iconUrl;
     private String date;
     private String currentTemp;
     private String description;
@@ -16,8 +15,6 @@ public class Forecast {
     public void setIconUrl(String iconUrl) {
         this.iconUrl = iconUrl;
     }
-
-    private String iconUrl;
 
     public String getCurrentTemp() {
         return currentTemp;

@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.orbitz.weather.R;
-import com.orbitz.weather.service.HttpRequestManager;
+import com.orbitz.weather.net.HttpRequestManager;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -38,6 +38,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         bindViews();
         LinearLayout layout = (LinearLayout) findViewById(R.id.weatherDisplay);
         layout.setOnClickListener(this);

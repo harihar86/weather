@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.orbitz.weather.R;
 import com.orbitz.weather.model.Forecast;
 import android.content.Context;
-import com.orbitz.weather.service.HttpRequestManager;
+import com.orbitz.weather.net.HttpRequestManager;
 
 import java.io.IOException;
 import java.util.List;

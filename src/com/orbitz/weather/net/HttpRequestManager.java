@@ -1,4 +1,4 @@
-package com.orbitz.weather.service;
+package com.orbitz.weather.net;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

@@ -2,15 +2,13 @@ package com.orbitz.weather.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.TextView;
 import com.orbitz.weather.R;
 import com.orbitz.weather.adapter.ForecastAdapter;
 import com.orbitz.weather.model.Forecast;
-import com.orbitz.weather.service.HttpRequestManager;
+import com.orbitz.weather.net.HttpRequestManager;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
